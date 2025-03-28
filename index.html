@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/77aeef84e2.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:/Users/HP/Documents/portfolio/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav> 
+        </div>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1> Hi, I'm <span>Devisri</span><br>From India</h1>
+            </div>
+    </div>
+    
+    <!-----------------about----------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:/Users/HP/Documents/portfolio/about2.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly adaptable and motivated professional seeking to leverage a diverse skill set in dynamic, cross-functional
+                        roles. With a strong foundation in analytical thinking, effective communication, and problem-solving, I am
+                        committed to continuous growth and dedicated to driving organizational success. I thrive in challenging
+                        environments, excel at collaborating with teams, and am eager to contribute my expertise wherever needed.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('technicalskills')">Technical Skills</p>
+                            <p class="tab-links" onclick="opentab('softskills')">Soft Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="technicalskills">
+                            <ul>
+                                <li><i class="fa-solid fa-code-branch"></i><span> Programming and Development</span><br>Python, Java, Advance Java, GOSU, MySQL, C Language, Compiler Design, Fundamentals of Internet of Things(IoT), Software Testing Methodologies</li>
+                                <li><i class="fa-solid fa-file-code"></i><span> Web Technologies</span><br>HTML, CSS, JavaScript, React.js, Node.js, Django</li>
+                                <li><i class="fa-solid fa-hexagon-nodes"></i><span> Data Science & AI</span><br>Machine Learning, Design and Analysis of Algorithms</li>
+                                <li><i class="fa-solid fa-laptop-code"></i><span> Software Tools</span><br>Guidewire - PolicyCenter, BillingCenter, Jupyter Notebook, Visual Studio Code, Spring Tool Suite</li>
+                                <li><i class="fa-solid fa-ticket"></i><span> Customer Service & Communication</span><br>Typing speed & accuracy, Basic knowledge of CRM tools, Familiarity with Live Chat and Email Support platforms, Troubleshooting skills, Customer Service Representative, Associate, Counter Staff, Agent</li>
+                                <li><i class="fa-brands fa-windows"></i><span> Data Management</span><br>Microsoft Office, Excel, and Database Management- SQL</li>
+                                <li><i class="fa-solid fa-database"></i><span> Databases</span><br>Database Management Systems, MySQL, Data Mining, PostgreSQL</li>
+                                <li><i class="fa-solid fa-chart-simple"></i><span> Software Development and Project Management</span><br>Software engineering, Software Testing Methodologies, Software process and project management</li>
+                                <li><i class="fa-brands fa-github"></i><span> Other</span><br>Git, GitHub, Formal languages automata theory, Data Structures, Cloud Computing, Cryptography and Network Security, Human Computer Interaction</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="softskills">
+                            <ul>
+                                <li>Customer Service and Communication skills & Presentation skills</li>
+                                <li>Analytical thinking & Logical reasoning</li>
+                                <li>Decision-making & Multitasking</li>
+                                <li>Handling pressure & Adaptability</li>
+                                <li>Self-awareness</li>
+                                <li>Leadership within teams</li>
+                                <li>Project management</li>
+                                <li>Problem-Solving & Conflict Resolution</li>
+                                <li>Attention to Detail</li>
+                                <li>Multitasking & Time Management</li>
+                                <li>Ability to analyze customer issues and provide quick solutions</li>
+                                <li>Clarity and conciseness in responses</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li class="item">
+                                    <span1 class="name">Capgemini</span1>
+                                    <div class="details">
+                                        <span class="title">Software Engineer</span>
+                                        <span class="date">29th Dec 2023 - 11th Oct 2024</span>
+                                    </div>
+                                </li>
+                                <p>Customized and optimized Guidewire PolicyCenter and BillingCenter to streamline policy administration and billing workflows.</p>
+                                <p>Developed and deployed scalable solutions using GOSU, improving system efficiency and user experience.</p>
+                                <p>Collaborated cross-functionally to troubleshoot and resolve Guidewire-related issues.</p>
+                                
+                                <li class="item">
+                                    <span class="name">Cloud Technologies</span>
+                                    <div class="details">
+                                        <span class="title">Internship</span>
+                                        <span class="date">1st March 2023 - 29th April 2023</span>
+                                    </div>
+                                </li>
+                                <p>Data Science with Python<br>Conducted sentiment analysis of social media data using Python and machine learning algorithms.</p>
+                                <p>Developed and optimized predictive models to enhance accuracy in sentiment classification.</p>
+                            </ul>      
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li class="item">
+                                    <span1 class="name">Lovely Professional University</span1>
+                                    <div class="details">
+                                        <div class="title"><i class="fa-solid fa-shield"></i> Master of Computer Applications (MCA)<br>in Cybersecurity</div>
+                                        <div class="date">2027</div>
+                                    </div>
+                                </li>
+                                
+                                <li class="item">
+                                    <span1 class="name">Sumathi reddy institute of technology for women</span1>
+                                    <div class="details">
+                                        <div class="title"><i class="fa-solid fa-graduation-cap"></i> B.Tech in Computer Science & Engineering (CSE)</div>
+                                        <div class="date">2023</div>
+                                    </div>
+                                </li>
+                                
+                                <li class="item">
+                                    <span1 class="name">Sri Chaitanya junior college</span1>
+                                    <div class="details">
+                                        <div class="title"><i class="fa-solid fa-school"></i> Intermediate MPC</div>
+                                        <div class="date">2019</div>
+                                    </div>
+                                </li>
+                                
+                                <li class="item">
+                                    <span1 class="name">St.Claire high school</span1>
+                                    <div class="details">
+                                        <div class="title"><i class="fa-solid fa-chalkboard-user"></i> SSC</div>
+                                        <div class="date">2017</div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                </div>                        
+             </div>
+        </div>
+    </div>
+    <!-----------------Services----------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Developer</h2>
+                    <p>Proficient in Python, Java, and GOSU for software solutions. Experienced in Guidewire PolicyCenter, BillingCenter, MySQL, and SQL for automation and database management.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Developer</h2>
+                    <p>Skilled in HTML, CSS, JavaScript, React.js, Node.js, and Django. Develops interactive and responsive web applications.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Human Resources (HR)</h2>
+                    <p>Manages talent acquisition, employee engagement, and performance management. Enhances organizational growth and HR efficiency.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>System Engineering</h2>
+                    <p>Ensures software development, deployment, and maintenance with optimized performance. Focus on system reliability and smooth operations.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ticket"></i>
+                    <h2>Technical Support & Customer Assistance</h2>
+                    <p>Provides technical support using CRM tools, live chat, and email. Expertise in troubleshooting and customer service.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Project Coordinator & Data Analyst</h2>
+                    <p>Manages project documentation and development tasks. Analyzes datasets using Microsoft Office, Excel, and SQL for business insights.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Product & Operations Manager</h2>
+                    <p>Defines product strategies and market analysis. Optimizes operations, improving efficiency and execution of business strategies.</p>
+                    <a href="#">learn more</a>
+                </div>    
+            </div>            
+        </div>
+    </div>
+    <!-- -----------------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:/Users/HP/Documents/portfolio/work-1.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Interactive and responsive web applications.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:/Users/HP/Documents/portfolio/work-1.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Interactive and responsive web applications.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:/Users/HP/Documents/portfolio/work-1.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Interactive and responsive web applications.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> surisettydevi24@gmil.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 955024166</p>
+                    <div class="social-icons">
+                        <a href = "https://www.linkedin.com/in/devisri-surisetty-47a46a230"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href = "https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="C:/Users/HP/Documents/portfolio/resume.pdf" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>   
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class ="copyright">
+            <p>Copyright © Devi <i class="fa-solid fa-heart"></i>.    Built in VS Code</p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
